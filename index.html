@@ -2,13 +2,28 @@
   <head>
     <title>elementary-cellular-automaton</title>
     <style type="text/css">
-      body, #canvas{
+      body{
+        background:#aaaaaa;
+      }
+      #canvas{
+        position:absolute;
+        top:0px;
+        left:0px;
         background:black;
       }
       #controls{
         position:absolute;
         top:0px;
         right:0px;
+        padding:1em;
+        background:#dddddd;
+        border: 1px solid #bbbbbb;
+        border-radius: 5px;
+      }
+      h2{
+        font-size:1.2em;
+        padding:0px;
+        margin:0px;
       }
     </style>
 
@@ -17,6 +32,7 @@
   <body>
     <canvas id="canvas"></canvas>
     <div id="controls">
+      <h2>Controls</h2>
       <input type="button" value="start" id="start"/>
       <input type="button" value="stop" id="stop"/>
       <input type="button" value="reset" id="reset"/>

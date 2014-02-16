@@ -2,8 +2,8 @@ $(document).ready(function(){
   app.init();
   var buttons = ['start', 'stop', 'reset'];
   for(var i=0; i<buttons.length; i++){
-    let button = buttons[i];
-    $('#'+button).click(app[button](););
+    var button = buttons[i];
+    $('#'+button).click(app[button]);
   }
 
 });
