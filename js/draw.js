@@ -34,8 +34,6 @@ draw.data = function(data){
   //square size should be the min of the two
   var square_size = square_width < square_height ? square_width : square_height;
   var rows = data.length;
-  var start_top = draw.height;
-  var start_left = draw.width;
   start_top = start_left = 0;
   for(var r = 0; r < rows; r++){
     var row_str = '';
@@ -45,7 +43,7 @@ draw.data = function(data){
       var x = start_left + (c_fix * square_size);
       var y = start_top + (r * square_size);
       if(app.data[r][c]){
-        draw.ctx.fillRect (x, y, square_size-1, square_size-1);
+        draw.ctx.fillRect(x, y, square_size-1, square_size-1);
       }      
     }
   }
