@@ -13,6 +13,8 @@ app.init = function(){
   app.iteration_dom = $('#iteration');//so we don't have too look it up each time
   draw.init();
   app.reset();
+  $('.loading').hide();
+  $('.loaded').show();
 };
 
 app.calc = function(left, center, right){

@@ -25,23 +25,31 @@
         padding:0px;
         margin:0px;
       }
+      .loaded{
+        display:none;
+      }
     </style>
 
   </head>
   
   <body>
-    <canvas id="canvas"></canvas>
+    <canvas class="loaded" id="canvas"></canvas>
     <div id="controls">
-      <h2>Controls</h2>
-      <p>
-        <input type="button" value="start" id="start"/>
-        <input type="button" value="step" id="step"/>
-        <input type="button" value="stop" id="stop"/>
-        <input type="button" value="reset" id="reset"/>
-      </p>
-      <p>
-        Iteration: <span id="iteration">0</span>
-      </p>
+      <div class="loading">
+        Loading...
+      </div>
+      <div class="loaded">
+        <h2>Controls</h2>
+        <p>
+          <input type="button" value="start" id="start"/>
+          <input type="button" value="step" id="step"/>
+          <input type="button" value="stop" id="stop"/>
+          <input type="button" value="reset" id="reset"/>
+        </p>
+        <p>
+          Iteration: <span id="iteration">0</span>
+        </p>
+      </div>
     </div>
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/draw.js"></script>
